@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #1F8A70;
+    background-color:black;
     color: #FFFFFF; 
 }
 
@@ -22,9 +22,16 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: flex-end;
 }
-
+.stats-card:hover{
+    background-color: darkgoldenrod;
+    cursor: url(/assets/images/lolly-cursor.png), pointer;
+    box-shadow: 0 0 50px lightblue;
+}
 .stats-card {
+    display: flex;
+    align-items: flex-end;
     background-color: #00425A;
     border-radius: 7px;
     padding: 1%;

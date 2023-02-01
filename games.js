@@ -28,7 +28,7 @@ const games = ` [
     "name": "Deity Tarot",
     "description": "A fully illustrated 78-card tarot deck with a divinely exalted take on the famous Smith-Waite tarot deck.",
     "pledged": 109,
-    "goal": 8000,
+    "goal": 8000,≥lo9
     "backers": 3,
     "img": "./assets/deity_tarot.png"
   },

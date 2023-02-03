@@ -26,31 +26,39 @@ function deleteChildElements(parent) {
 const gamesContainer = document.getElementById("games-container");
 
 // create a function that adds all data from the games array to the page
-function addGamesToPage(games) {
-
-    // loop over each item in the data
-
+ // loop over each item in the data
 
         // create a new div element, which will become the game card
-
-
         // add the class game-card to the list
-
-
         // set the inner HTML using a template literal to display some info 
         // about each game
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
-
-
         // append the game to the games-container
 
+function addGamesToPage(games) {
+    games.forEach(function(games){
+        const game_card = document.createElement("div");
+        game_card.classList.add("game-card"); 
+        const display =`
+        <div>
+            <img src=${game.img} class="game-img"> </img>
+                <p>name:${game.name}</p>
+                <p>description:${game.description}</p>
+                <p>pledged:${games.pledged},</p>
+                <p>goal:${game.goal}</p>
+                <p>backers:${game.backers}</p>
+        </div>
+        `;
+        game_card.innerHTML = display; 
+
+        gamesContainer.appendChild(game_card);
+    });
 }
 
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
-
-
+console.log(addGamesToPage(GAMES_JSON));
 /*************************************************************************************
  * Challenge 4: Create the summary statistics at the top of the page displaying the
  * total number of contributions, amount donated, and number of games on the site.

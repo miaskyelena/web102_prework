@@ -37,38 +37,21 @@ const gamesContainer = document.getElementById("games-container");
         // append the game to the games-container
 
 function addGamesToPage(games) {
-
-    games.forEach(function(game){
-
-        const game_card = document.createElement("div");
-
-        game_card.classList.add("game-card"); 
-
-        const display = `
-        <div>
-            <img src=${game.img} class="game-img"> 
-                <p>name:${game.name}</p>
-                <p>description:${game.description},</p>
-                <p>pledged:${game.pledged},</p>
-                <p>goal:${game.goal}</p>
-                <p>backers:${game.backers}</p>
-            
-            </img>
-                <p>name:${game.name}</p>
-                <p>description:${game.description},</p>
-                <p>pledged:${game.pledged},</p>
-                <p>goal:${game.goal}</p>
-                <p>backers:${game.backers}</p>
-        </div>
-        `;
-        game_card.innerHTML = display; 
-        gamesContainer.appendChild(game_card);
-    });
+    for(let game of games) {
+          let gameCard = document.createElement("div");
+          gameCard.classList.add("game-card"); 
+            gameCard.innerHTML = `
+              <img src= "${game.img}" class="game-img"/>
+              <h2>${game.name}</h2>
+               <p>${game.description}</p>
+               <p>Backers: ${game.backers}</p>
+                `;
+                gamesContainer.append(gameCard);
+            }
 }
-
+addGamesToPage(GAMES_JSON);
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
-addGamesToPage(GAMES_JSON);
 /*************************************************************************************
  * Challenge 4: Create the summary statistics at the top of the page displaying the
  * total number of contributions, amount donated, and number of games on the site.
@@ -126,7 +109,9 @@ function filterFundedOnly() {
 function showAllGames() {
     deleteChildElements(gamesContainer);
 
+
     // add all games from the JSON data to the DOM
+    addGamesToPage(GAMES_JSON);
 
 }
 
@@ -136,7 +121,9 @@ const fundedBtn = document.getElementById("funded-btn");
 const allBtn = document.getElementById("all-btn");
 
 // add event listeners with the correct functions to each button
-
+unfundedBtn.addEventListener("click", filterUnfundedOnly);
+fundedBtn.addEventListener("click", filterFundedOnly);
+allBtn.addEventListener("click", showAllGames);
 
 /*************************************************************************************
  * Challenge 6: Add more information at the top of the page about the company.

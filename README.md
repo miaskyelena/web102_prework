@@ -7,7 +7,7 @@ Submitted by: **Mia Elena Tapia**
 
 Time spent: **6** hours spent in total
 
-[<img src="https://media.giphy.com/media/e4DOfI9uqn9rHVmeVb/giphy.gif">](https://www.youtube.com/watch?v=Sg8FMNEt8KY)
+<img src="https://media.giphy.com/media/e4DOfI9uqn9rHVmeVb/giphy.gif">
 
 
 ## Required Features
@@ -27,18 +27,19 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
+<img src="https://media.giphy.com/media/IfewE0BHDz1fX0GyJ1/giphy.gif" 
+alt="Cheetah!" />
+
 GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+Giphy
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+- Learned to create an iterative function.
+- Learned how to use the DOM to call and define elements.
+- Learned essential CSS manipulation.
 
 ## License
 

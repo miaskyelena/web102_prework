@@ -21,6 +21,9 @@ function deleteChildElements(parent) {
  * Challenge 3: Add data about each game as a card to the games-container
  * Skills used: DOM manipulation, for loops, template literals, functions
 */
+let x=10
+let y=4
+console.log("The answer to ${x} + ${y} is ${x + y}")
 
 // grab the element with the id games-container
 const gamesContainer = document.getElementById("games-container");
@@ -35,23 +38,29 @@ const gamesContainer = document.getElementById("games-container");
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
         // append the game to the games-container
-
-function addGamesToPage(games) {
-    for(let game of games) {
-          let gameCard = document.createElement("div");
-          gameCard.classList.add("game-card"); 
-            gameCard.innerHTML = `
-              <img src= "${game.img}" class="game-img"/>
-              <h2>${game.name}</h2>
-               <p>${game.description}</p>
-               <p>Backers: ${game.backers}</p>
+        
+        function addGamesToPage(games) {
+            games.forEach(function(game){
+                const game_card = document.createElement("div");
+                game_card.classList.add("game-card");
+                const display = `
+                    <div>
+                        <img src=${game.img} class="game-img"></img>
+                        <p>name: ${game.name}</p>
+                        <p>description: ${game.description},</p>
+                        <p>pledged: ${game.pledged},</p>
+                        <p>backers: ${game.backers}</p>
+                    </div>
                 `;
-                gamesContainer.append(gameCard);
-            }
-}
-addGamesToPage(GAMES_JSON);
-// call the function we just defined using the correct variable
-// later, we'll call this function using a different list of games
+                game_card.innerHTML = display;
+                gamesContainer.appendChild(game_card);
+            });
+        }
+        
+        // call the function we just defined using the correct variable
+        // later, we'll call this function using a different list of games
+        addGamesToPage(GAMES_JSON)
+
 /*************************************************************************************
  * Challenge 4: Create the summary statistics at the top of the page displaying the
  * total number of contributions, amount donated, and number of games on the site.
@@ -111,7 +120,6 @@ function showAllGames() {
 
 
     // add all games from the JSON data to the DOM
-    addGamesToPage(GAMES_JSON);
 
 }
 

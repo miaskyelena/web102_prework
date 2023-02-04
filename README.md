@@ -7,7 +7,7 @@ Submitted by: **Mia Elena Tapia**
 
 Time spent: **6** hours spent in total
 
-[<img src="https://media.giphy.com/media/e4DOfI9uqn9rHVmeVb/giphy.gif">](https://www.youtube.com/watch?v=Sg8FMNEt8KY)
+<img src="https://media.giphy.com/media/e4DOfI9uqn9rHVmeVb/giphy.gif">
 
 
 ## Required Features

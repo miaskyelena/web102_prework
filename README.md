@@ -5,7 +5,7 @@ Submitted by: **Mia Elena Tapia**
 
 **Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **2** hours spent in total
+Time spent: **6** hours spent in total
 
 [<img src="https://media.giphy.com/media/e4DOfI9uqn9rHVmeVb/giphy.gif">](https://www.youtube.com/watch?v=Sg8FMNEt8KY)
 

@@ -26,7 +26,7 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
-<img src="https://media.giphy.com/media/IfewE0BHDz1fX0GyJ1/giphy.gif alt="Walkthrough"/>
+<img src="https://media.giphy.com/media/IfewE0BHDz1fX0GyJ1/giphy.gif"alt="Walkthrough"/>
 
 GIF created with ...  
 Giphy

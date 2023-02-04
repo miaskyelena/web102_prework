@@ -57,12 +57,18 @@ body {
 }
 
 .game-card {
-    background-color: #e4d3d3;
+    background-color:#00425A;
     padding: 1%;
     margin: 1%;
     width: 300px;
     text-align: center;
     border-radius: 7px;
+}
+
+.game-card:hover{
+    background-color: darkgoldenrod;
+    cursor: pointer;
+    box-shadow: 0 0 50px lightblue;
 }
 
 .game-card:hover {

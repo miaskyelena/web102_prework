@@ -23,7 +23,7 @@ function deleteChildElements(parent) {
 */
 let x=10
 let y=4
-console.log("The answer to ${x} + ${y} is ${x + y}")
+console.log("The answer to ${x} + ${y} is ${x + y}");
 
 // grab the element with the id games-container
 const gamesContainer = document.getElementById("games-container");
@@ -39,27 +39,27 @@ const gamesContainer = document.getElementById("games-container");
         // between the end of the src attribute and the end of the tag ("/>")
         // append the game to the games-container
         
-        function addGamesToPage(games) {
-            games.forEach(function(game){
-                const game_card = document.createElement("div");
-                game_card.classList.add("game-card");
-                const display = `
-                    <div>
-                        <img src=${game.img} class="game-img"></img>
-                        <p>name: ${game.name}</p>
-                        <p>description: ${game.description},</p>
-                        <p>pledged: ${game.pledged},</p>
-                        <p>backers: ${game.backers}</p>
-                    </div>
-                `;
-                game_card.innerHTML = display;
-                gamesContainer.appendChild(game_card);
-            });
-        }
-        
-        // call the function we just defined using the correct variable
-        // later, we'll call this function using a different list of games
-        addGamesToPage(GAMES_JSON)
+function addGamesToPage(games) {
+    games.forEach(function(game){
+        const game_card = document.createElement("div");
+        game_card.classList.add("game-card");
+        const display = `
+            <div>
+                <img src=${game.img} class="game-img"></img>
+                <p>name: ${game.name}</p>
+                <p>description: ${game.description},</p>
+                <p>pledged: ${game.pledged},</p>
+                <p>backers: ${game.backers}</p>
+            </div>
+        `;
+        game_card.innerHTML = display;
+        gamesContainer.appendChild(game_card);
+    });
+}
+
+// call the function we just defined using the correct variable
+// later, we'll call this function using a different list of games
+addGamesToPage(GAMES_JSON)
 
 /*************************************************************************************
  * Challenge 4: Create the summary statistics at the top of the page displaying the
@@ -117,8 +117,7 @@ function filterFundedOnly() {
 // show all games
 function showAllGames() {
     deleteChildElements(gamesContainer);
-
-
+    addGamesToPage(GAMES_JSON);
     // add all games from the JSON data to the DOM
 
 }

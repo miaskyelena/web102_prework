@@ -29,7 +29,7 @@ Here's a walkthrough of implemented features:
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
+<iframe src="https://giphy.com/embed/IfewE0BHDz1fX0GyJ1" width="480" height="427" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/IfewE0BHDz1fX0GyJ1">via GIPHY</a></p>
 GIF created with ...  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS

@@ -30,7 +30,6 @@ body {
     box-shadow: 0 0 50px lightblue;
 }
 .stats-card {
-    display: flex;
     align-items: flex-end;
     background-color: #00425A;
     border-radius: 7px;

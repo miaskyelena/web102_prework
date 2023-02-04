@@ -27,18 +27,17 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/IfewE0BHDz1fX0GyJ1/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<iframe src="https://giphy.com/embed/IfewE0BHDz1fX0GyJ1" width="480" height="427" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/IfewE0BHDz1fX0GyJ1">via GIPHY</a></p>
 GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+Giphy
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+- Learned to create an iterative function.
+- Learned how to use the DOM to call and define elements.
+- Learned essential CSS manipulation.
 
 ## License
 
